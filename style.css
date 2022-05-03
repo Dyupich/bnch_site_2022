@@ -40,14 +40,14 @@ body {
 /* profile block styles */
 .profile_block {
     width: 100%;
-    height: 660px;
+    height: 330px;
     display: flex;
     justify-content: center;
 }
 
 .profile_block__inner {
     width: 45%;
-    height: 660px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,9 +64,9 @@ body {
 }
 
 .profile_block__inner__photo {
-    width: 100%;
-    height: 100%;
-    -ms-interpolation-mode: nearest-neighbor;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* info_block styles */
@@ -121,15 +121,17 @@ body {
     height: 110px;
     font-size: 50px;
     margin-top: 20px;
-    
+    color: white;
 }
 .projects_block__row {
     width: 100%;
     height: 580px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
+    
     color: gray;
+    margin-bottom: 10px;
 }
 
 .projects_block__row__item {
@@ -164,11 +166,12 @@ body {
 /* contacts block styles */
 .contacts_block {
     width: 100%;
-    height: 530px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    color: white;
 }
 
 .contacts_block__inner {
@@ -198,3 +201,7 @@ body {
     height: 20px;
     margin: 5px 5px;
 }
+
+/* Photos */
+
+
