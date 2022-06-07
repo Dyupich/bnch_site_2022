@@ -99,6 +99,16 @@ a {
     color: white;
 }
 
+.download__row {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    text-align: start;
+    color: white;
+}
+
 .links {
     margin-top: 20px;
 }

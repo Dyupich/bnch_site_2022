@@ -15,12 +15,16 @@ do
 		clear
 		sudo apt update
 		sudo apt install apache2 git ufw firefox
+		echo "Done!!!"
+		sleep 1
 	elif [ "$code" == "2" ]; then
 		clear
 		if [[ -d ./html/ ]]; then
 			sudo rm -r ./html
 		fi
 		sudo git clone "https://github.com/Dyupich/bnch_site_2022" ./html
+		echo "Done!!!"
+		sleep 1
 	elif [ "$code" == "3" ]; then
 		clear
 		if [[ -d /var/www/html/ ]]; then
@@ -28,11 +32,15 @@ do
 		fi
 		echo "Trying to copy..."
 		sudo cp -r ./html /var/www/html
-		
+		echo "Done!!!"
+		sleep 1
 	elif [ "$code" == "4" ]; then
 		clear
 		sudo service apache2 start
+		# Dont work from root 
 		firefox --new-window localhost
+		echo "Done!!!"
+		sleep 1
 	elif [ "$code" == "5" ]; then
 		clear
 		break
